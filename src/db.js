@@ -17,8 +17,8 @@ const initializeDatabase = async() => {
                 CREATE TABLE IF NOT EXISTS posts (
                 id SERIAL PRIMARY KEY,
                 content TEXT NOT NULL,
-                created_at TIMESTAP DEFAULT CURRENT_TIMESTAMP,
-                updated_at TIMESTAP DEFAULT CURRENT_TIMESTAMP);
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
             `
         );
         console.log("Database tables created or already exists");
