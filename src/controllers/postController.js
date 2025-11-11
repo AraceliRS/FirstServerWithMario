@@ -16,7 +16,7 @@ export const createPost = async (req, res) => {
     }
 }
 
-export const getAllPosts = async (req, res) => {
+export const getAllPost = async (req, res) => {
     try{
         const getPostsQuery = `
             SELECT id, content, created_at
